@@ -146,7 +146,7 @@ export default function Home() {
 
           <section className="flex justify-between gap-8">
             <textarea name="" id="" placeholder="Add Details" className="text-sm bg-white rounded-lg p-4 w-2/3 border border-[#BCBCBC]"></textarea>
-            <div className="bg-[#CEE5FF] border-brand rounded-lg w-full flex justify-between divide-x divide-gray py-4">
+            <div className="bg-[#CEE5FF] border-brand rounded-lg w-full flex justify-between divide-x divide-brand/10 py-4">
               <div className="text-center space-y-1 w-full">
                 <h4 className="text-sm font-medium">Total Cost</h4>
                 <p className="text-xl font-semibold">$100.00</p>
