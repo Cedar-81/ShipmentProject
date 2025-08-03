@@ -82,17 +82,19 @@ const steps = ['Create Shipment', 'Repacking & Consolidation', 'Shipment Details
 
 export default function CustomizedSteppers() {
   return (
-    <Stack sx={{ width: '100%' }} spacing={4}>
-      <Stepper 
-        activeStep={4} 
-        connector={<QontoConnector />}
-      >
-        {steps.map((label) => (
-          <Step key={label}>
-            <StepLabel StepIconComponent={QontoStepIcon}>{label}</StepLabel>
-          </Step>
-        ))}
-      </Stepper>
-    </Stack>
+    <div className='w-full overflow-x-auto'>
+        <Stack sx={{ width: '100%' }} spacing={4}>
+        <Stepper 
+            activeStep={4} 
+            connector={<QontoConnector />}
+        >
+            {steps.map((label) => (
+            <Step key={label}>
+                <StepLabel StepIconComponent={QontoStepIcon}>{label}</StepLabel>
+            </Step>
+            ))}
+        </Stepper>
+        </Stack>
+    </div>
   );
 }

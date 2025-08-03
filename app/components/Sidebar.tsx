@@ -2,10 +2,14 @@ import Image from "next/image";
 import Logo from  "@/public/logo.png"
 import Avatar from "@/public/avatar.png"
 
+import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
+import AppsIcon from '@mui/icons-material/Apps';
+
 export default function Sidebar() {
+
     return(
-        <nav className="h-screen max-h-screen w-18 sticky top-0 left-0 overflow-hidden">
-            <div className="h-18 flex justify-center items-center">
+        <nav className="h-screen max-h-screen w-18 lg:sticky top-0 left-0 overflow-hidden">
+            <div className="h-18 bg-white flex justify-center items-center">
                 <Image alt="logo" height={31} width={37} className="" src={Logo} />
             </div>
 
@@ -114,7 +118,14 @@ export default function Sidebar() {
                     </li>
                 </ul>
 
-                <ul className="flex-shrink-0">
+                <ul className="flex-shrink-0 border-t mt-10">
+                    <li className="p-4 lg:hidden w-full cursor-pointer relative flex justify-center items-center">
+                        <NotificationsNoneOutlinedIcon sx={{height: "24px", width: "24px"}} className="text-white" /> <div className="size-[7.5px] top-5 left-[37px] rounded-full bg-[#FF5E14] absolute" />
+                    </li>
+                    <li className="p-4 w-full lg:hidden cursor-pointer flex justify-center items-center">
+                        <AppsIcon sx={{height: "24px", width: "24px"}} className="text-white" />
+                    </li>
+
                     <li className="p-4 w-full cursor-pointer flex justify-center items-center">
                         <Image alt="avatar" height={24} width={24} className="" src={Avatar} />
                     </li>
