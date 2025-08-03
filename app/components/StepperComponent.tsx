@@ -82,7 +82,7 @@ const steps = ['Create Shipment', 'Repacking & Consolidation', 'Shipment Details
 
 export default function CustomizedSteppers() {
   return (
-    <div className='w-full overflow-x-auto'>
+    <div className='w-full overflow-x-auto lg:overflow-visible'>
         <Stack sx={{ width: '100%' }} spacing={4}>
         <Stepper 
             activeStep={4} 

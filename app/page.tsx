@@ -142,15 +142,15 @@ export default function Home() {
           </section>
 
           {/* Textarea and Cost Section */}
-          <section className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8">
+          <section className="grid grid-cols-1 lg:grid-cols-3 lg:flex gap-4 lg:gap-8">
             <textarea 
               name="" 
               id="" 
               placeholder="Add Details" 
-              className="text-sm bg-white rounded-lg p-4 border border-[#BCBCBC] lg:col-span-2 min-h-[120px] resize-none"
+              className="text-sm bg-white rounded-lg p-4 border lg:w-2/3 border-[#BCBCBC] lg:col-span-2 min-h-[120px] resize-none"
             />
             
-            <div className="bg-[#CEE5FF] border-brand rounded-lg flex flex-col sm:flex-row lg:flex-col justify-between divide-y sm:divide-y-0 sm:divide-x lg:divide-x-0 lg:divide-y divide-brand/10 py-4">
+            <div className="bg-[#CEE5FF] border-brand rounded-lg flex lg:items-center flex-col lg:flex-row lg:w-full justify-between divide-y sm:divide-x-0 sm:divide-y lg:divide-y-0 lg:divide-x divide-brand/10 py-4">
               <div className="text-center space-y-1 w-full py-2 sm:py-0">
                 <h4 className="text-sm font-medium">Total Cost</h4>
                 <p className="text-lg sm:text-xl font-semibold">$100.00</p>
